@@ -49,6 +49,12 @@ All patches are located at runtime via masked byte pattern search, so they survi
 
 Run the pattern checker first if all three show OK no changes are needed:
 
-    .\tools\find_patches.ps1 "C:\Program Files\Bitsum\ParkControl\ParkControl.exe"
+```powershell
+.\tools\find_sig.ps1 "C:\Program Files\Bitsum\ParkControl\ParkControl.exe"
+```
+OR
+```
+py .\tools\find_sig.py "C:\Program Files\Bitsum\ParkControl\ParkControl.exe"
+```
 
 If any pattern shows FAIL, follow [IDA Signature Update Guide](tools/IDA_SIG_UPDATE_GUIDE.md) to regenerate it.
